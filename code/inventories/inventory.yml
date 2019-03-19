@@ -1,0 +1,9 @@
+all:
+  hosts:
+    vManage:
+      ansible_host: 192.168.207.46
+      ansible_port: 8443
+      username: admin
+      password: admin
+      policyid: 06aff4a6-425c-4a66-971c-0f719f1f7e0a
+#      policyid: 7e7cf7a3-e9be-4a47-a91a-1bbfbec74149
