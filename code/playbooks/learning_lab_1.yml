@@ -1,4 +1,9 @@
 ---
+- name: CiscoDevNet SDWAN Ansible Learning Lab 1
+  hosts: all
+  connection: local
+  gather_facts: no
+  
 - name: Login to the vManage
   uri:
     url: https://{{ansible_host}}:{{ansible_port}}/dataservice/j_security_check
