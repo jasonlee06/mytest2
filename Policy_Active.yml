@@ -1,0 +1,17 @@
+---
+  - name: Create Feature Template
+    uri:
+      url: https://{{ansible_host}}:{{ansible_port}}/dataservice/template/policy/vsmart/activate/{{policyid}}
+      method: POST
+      return_content: yes
+      validate_certs: no
+      body_format: json
+      headers:
+        Cookie: "{{login.set_cookie}}"
+        Content-Type: "application/json"
+      body:
+        isPolicyActivated: true
+    register: test123 
+
+  - name: Print content
+    debug: var=test123
