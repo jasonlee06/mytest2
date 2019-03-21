@@ -26,3 +26,6 @@
         body:
           isPolicyActivated: true
       register: test123 
+
+    - name: Print all template list
+      debug: var=test123
