@@ -15,7 +15,7 @@
 
     - name: Create Feature Template
       uri:
-        url: https://{{ansible_host}}:{{ansible_port}}/dataservice/template/policy/vsmart/activate/{{policyid}}
+        url: https://{{ansible_host}}:{{ansible_port}}/dataservice/template/policy/vsmart/activate/{{policyid1}}
         method: POST
         return_content: yes
         validate_certs: no
